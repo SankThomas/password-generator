@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +7,7 @@
 }
 
 .App {
-  font-family: sans-serif;
+  font-family: "Tajawal", sans-serif;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
@@ -13,6 +15,11 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+  color: #111827;
+}
+
+.bg-gray-900 {
+  width: 300px;
 }
 
 form {
@@ -24,4 +31,49 @@ form div {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+input,
+input::placeholder,
+label,
+button {
+  font-size: 18px;
+  user-select: none;
+}
+
+/* Background gaussian blur */
+.red,
+.green,
+.orange,
+.blue {
+  position: absolute;
+  height: 50%;
+  width: 50%;
+  z-index: -1;
+  border-radius: 50%;
+  filter: blur(1.25rem);
+}
+
+.red {
+  background-color: hsl(0, 100%, 50%, 0.5);
+  top: -10%;
+  left: -10%;
+}
+
+.green {
+  background-color: hsl(120, 100%, 25%, 0.5);
+  top: 0;
+  right: 10%;
+}
+
+.orange {
+  background-color: hsl(39, 100%, 50%, 0.8);
+  bottom: 0;
+  right: 0;
+}
+
+.blue {
+  background-color: hsl(240, 100%, 50%, 0.5);
+  bottom: 10%;
+  left: 0;
 }
