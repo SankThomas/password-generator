@@ -1,4 +1,4 @@
-# password-generator
+# ReactJs Password Generator
 
 ![password-generator-screenshot](./screenshot.png)
 
